@@ -1,0 +1,20 @@
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    cache: false
+    charset: utf-8
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    content-type: text/html
+    check-template-location: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/petdb
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
